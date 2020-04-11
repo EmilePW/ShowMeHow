@@ -2,7 +2,6 @@
   "name": "ShowMeHow",
   "short_name": "ShowMeHow",
   "version": "0.0.1",
-  "default_locale": "en",
   "description": "Record a series of actions and play them in another user's browser",
   "permissions": [],
   "content_security_policy": "script-src 'self' 'unsafe-eval' https://ssl.google-analytics.com; object-src 'self'",
