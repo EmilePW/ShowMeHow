@@ -1,0 +1,37 @@
+{
+  "name": "ShowMeHow",
+  "short_name": "ShowMeHow",
+  "version": "0.0.1",
+  "default_locale": "en",
+  "description": "Record a series of actions and play them in another user's browser",
+  "permissions": [],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://ssl.google-analytics.com; object-src 'self'",
+  "background": {
+    "scripts": ["dist/background/index.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["dist/content_scripts/index.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [],
+  "browser_action": {
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16": "images/icon_16.png",
+      "32": "images/icon_32.png",
+      "48": "images/icon_48.png",
+      "128": "images/icon_128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon_16.png",
+    "32": "images/icon_32.png",
+    "48": "images/icon_48.png",
+    "128": "images/icon_128.png"
+  },
+  "manifest_version": 2
+}
