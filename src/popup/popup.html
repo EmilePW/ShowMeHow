@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="/dist/index.css">
-</head>
-<body>
-  <script src="/dist/popup/popup.js"></script>
-</body>
+  <head>
+    <link rel="stylesheet" href="/dist/index.css" />
+  </head>
+  <body>
+    <div class="flex flex-col items-center w-64 p-4">
+      <div class="flex items-center justify-center border-b w-full">
+        <h1 class="text-xl font-bold">Show Me How</h1>
+      </div>
+      <div class="flex flex-col items-center justify-center h-32">
+        <h2 class="text-lg font-bold">Record</h2>
+        <button
+          id="record"
+          class="mt-2 border-4 flex items-center justify-center rounded-full w-16 h-16 outline-none hover:bg-gray-100 active:bg-gray-600"
+        >
+          <div class="circle rounded-full w-6 h-6 bg-red-500"></div>
+        </button>
+      </div>
+    </div>
+    <script src="/dist/popup/popup.js"></script>
+  </body>
 </html>
